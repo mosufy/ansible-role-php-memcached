@@ -1,0 +1,8 @@
+---
+# tasks file for php-memcached
+
+- include: php56-memcached.yml
+  when: php_version == '56'
+
+- include: php70-memcached.yml
+  when: php_version == '70'

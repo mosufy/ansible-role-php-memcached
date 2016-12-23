@@ -1,0 +1,8 @@
+---
+- name: Install PHP 5.6 memcached extensions
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - php56w-pecl-memcache
+    - php56w-pecl-memcached

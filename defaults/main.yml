@@ -1,0 +1,4 @@
+---
+# defaults file for php-memcached
+
+php_version: 70
